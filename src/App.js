@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import JobCard from './JobCard';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <JobCard
+        company='Great Vibes - Information Technology'
+        position=''
+        location='Chennai,Tamilnadu,India (In-office)'
+        experience='1-2'
+        salary='4000-5000'
+        timing='9.00 am - 6.00 pm'
+        employes='51-200'
+        jobTitle='UI UX Designer'
+      >
+      </JobCard>
     </div>
+
   );
 }
-
 export default App;
