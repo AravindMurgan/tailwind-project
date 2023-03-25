@@ -3,14 +3,14 @@ import React from 'react';
 function JobCard(props) {
     const { company, location, experience,
         salary, timing, employes, jobTitle,
-        ImageUrl, ImageWidth, ImageHeight } = props;
+        ImageUrl } = props;
     return (
         <div className="flex justify-center bg-black">
             <div className="block max-w-3xl rounded-lg bg-white text-center shadow-lg white:bg-neutral-700">
                 <div className='flex flex-row p-3'>
                     <div className='items-start mt-8'>
                         <img src={ImageUrl} alt="netflix"
-                            className={`w-${ImageWidth} h-${ImageHeight} rounded-lg`} />
+                            className={`w-14 h-14 rounded-lg`} />
                     </div>
                     <div className="p-6">
                         <h5 className="text-2xl text-start font-medium text-neutral-800 white:text-neutral-50">

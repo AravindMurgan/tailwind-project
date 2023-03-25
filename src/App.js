@@ -14,8 +14,6 @@ function App() {
         employes='51-200'
         jobTitle='UI UX Designer'
         ImageUrl='/images/netflix.png'
-        ImageWidth='14'
-        ImageHeight='14'
       >
       </JobCard>
     </div>
