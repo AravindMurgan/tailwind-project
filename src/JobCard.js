@@ -1,13 +1,16 @@
 import React from 'react';
 
 function JobCard(props) {
-    const { company, location, experience, salary, timing, employes, jobTitle } = props;
+    const { company, location, experience,
+        salary, timing, employes, jobTitle,
+        ImageUrl, ImageWidth, ImageHeight } = props;
     return (
         <div className="flex justify-center bg-black">
             <div className="block max-w-3xl rounded-lg bg-white text-center shadow-lg white:bg-neutral-700">
                 <div className='flex flex-row p-3'>
                     <div className='items-start mt-8'>
-                        <img src="/images/netflix.png" alt="My Image" className="w-14 h-14 rounded-lg" />
+                        <img src={ImageUrl} alt="netflix"
+                            className={`w-${ImageWidth} h-${ImageHeight} rounded-lg`} />
                     </div>
                     <div className="p-6">
                         <h5 className="text-2xl text-start font-medium text-neutral-800 white:text-neutral-50">
@@ -36,7 +39,7 @@ function JobCard(props) {
                   0_4px_18px_0_rgba(59,113,202,0.2)] rounded-lg" data-te-ripple-init data-te-ripple-color="light">
                                     Apply Now
                                 </button>
-                                <button type="button" className="inline-block rounded bg-white border-2 border-blue-300 
+                                <button type="button" className="inline-block bg-white border-2 border-blue-300 
                   px-2 pt-2.5 pb-2 text-xs font-medium 
                   uppercase leading-normal text-blue-400 shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out 
                   hover:bg-blue-50 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] rounded-lg"

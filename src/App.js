@@ -13,6 +13,9 @@ function App() {
         timing='9.00 am - 6.00 pm'
         employes='51-200'
         jobTitle='UI UX Designer'
+        ImageUrl='/images/netflix.png'
+        ImageWidth='14'
+        ImageHeight='14'
       >
       </JobCard>
     </div>
